@@ -18,16 +18,7 @@ public class Main extends JavaPlugin {
 	public void onEnable() {
 			ss();
 			
-			getCommand("ccs").setExecutor(new CommandExecutor() {
-				@Override
-				public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
-					Player p = (Player) sender;
-					String j = StringUtils.join(args, ' ');
-					j = j.replace("/ccs ", "");
-					Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "say Hello, world!");
-					return true;
-				}
-			});
+			getCommand("ccs").setExecutor(new TestExecutor());
 	}
 	
 	/**
