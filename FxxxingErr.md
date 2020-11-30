@@ -1,0 +1,26 @@
+[13:41:14] [Server thread/INFO]: Mc0_ issued server command: /bag
+[13:41:14] [Server thread/ERROR]: null
+org.bukkit.command.CommandException: Unhandled exception executing command 'bag' in plugin BackPackPlugin v14.0
+	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:47) ~[Start.jar:git-Spigot-37d799b-3eb7236]
+	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:149) ~[Start.jar:git-Spigot-37d799b-3eb7236]
+	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.dispatchCommand(CraftServer.java:758) ~[Start.jar:git-Spigot-37d799b-3eb7236]
+	at net.minecraft.server.v1_16_R3.PlayerConnection.handleCommand(PlayerConnection.java:1788) ~[Start.jar:git-Spigot-37d799b-3eb7236]
+	at net.minecraft.server.v1_16_R3.PlayerConnection.c(PlayerConnection.java:1631) ~[Start.jar:git-Spigot-37d799b-3eb7236]
+	at net.minecraft.server.v1_16_R3.PlayerConnection.a(PlayerConnection.java:1584) ~[Start.jar:git-Spigot-37d799b-3eb7236]
+	at net.minecraft.server.v1_16_R3.PacketPlayInChat.a(PacketPlayInChat.java:47) ~[Start.jar:git-Spigot-37d799b-3eb7236]
+	at net.minecraft.server.v1_16_R3.PacketPlayInChat.a(PacketPlayInChat.java:1) ~[Start.jar:git-Spigot-37d799b-3eb7236]
+	at net.minecraft.server.v1_16_R3.PlayerConnectionUtils.lambda$0(PlayerConnectionUtils.java:19) ~[Start.jar:git-Spigot-37d799b-3eb7236]
+	at net.minecraft.server.v1_16_R3.TickTask.run(SourceFile:18) ~[Start.jar:git-Spigot-37d799b-3eb7236]
+	at net.minecraft.server.v1_16_R3.IAsyncTaskHandler.executeTask(SourceFile:144) ~[Start.jar:git-Spigot-37d799b-3eb7236]
+	at net.minecraft.server.v1_16_R3.IAsyncTaskHandlerReentrant.executeTask(SourceFile:23) ~[Start.jar:git-Spigot-37d799b-3eb7236]
+	at net.minecraft.server.v1_16_R3.IAsyncTaskHandler.executeNext(SourceFile:118) ~[Start.jar:git-Spigot-37d799b-3eb7236]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.bb(MinecraftServer.java:941) ~[Start.jar:git-Spigot-37d799b-3eb7236]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.executeNext(MinecraftServer.java:934) ~[Start.jar:git-Spigot-37d799b-3eb7236]
+	at net.minecraft.server.v1_16_R3.IAsyncTaskHandler.awaitTasks(SourceFile:127) ~[Start.jar:git-Spigot-37d799b-3eb7236]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.sleepForTick(MinecraftServer.java:918) ~[Start.jar:git-Spigot-37d799b-3eb7236]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.w(MinecraftServer.java:850) ~[Start.jar:git-Spigot-37d799b-3eb7236]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.lambda$0(MinecraftServer.java:164) ~[Start.jar:git-Spigot-37d799b-3eb7236]
+	at java.lang.Thread.run(Thread.java:830) [?:?]
+Caused by: java.lang.NullPointerException
+	at com.minco.plugin.bag.BagExecutor.onCommand(BagExecutor.java:21) ~[?:?]
+	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:45) ~[Start.jar:git-Spigot-37d799b-3eb7236]
